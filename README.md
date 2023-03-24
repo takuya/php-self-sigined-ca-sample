@@ -93,7 +93,7 @@ nsComment = "Generated Certificate by plain php"
 ```
 
 ### 署名時のopenssl.cnf
-署名時には、`usr_cert`のセクションでX509.extension を使って、SubjectAltNameを指定している。
+署名時には、`X509.extension`を`usr_cert`という名前で指定して、SubjectAltNameを登録している。
 
 phpでは`x509_extensions=usr_cert`とセクション名を関数から指定可能である。openssl コマンドも同様のオプションを渡すことが可能である。
 ```ini
