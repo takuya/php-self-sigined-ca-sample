@@ -30,7 +30,7 @@ $opt = [
   'config'          => $path,
   'x509_extensions' => 'usr_cert',
 ];
-$cert = openssl_csr_sign( $user_csr, $issuer_crt, $issuer_pkey, $days, $opt, time() );
+$cert = openssl_csr_sign( $userCSR, $issuerCrt, $issuerPkey, $days=30, $opt, time() );
 ```
 
 ### 設定の作成
