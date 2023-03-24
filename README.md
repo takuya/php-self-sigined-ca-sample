@@ -77,7 +77,7 @@ item = value
 リクエスト作成時には `[req]`が使われる。
 
 `distinguished_name = req_distinguished_name`の設定により、`[req_distinguished_name]`を参照することを明示している
-`#req_extensions=v3_req` をコメントアウトしているが、phpでは`req_extensions`セクションの名前を関数から指定可能である。openssl コマンドでも同様に、オプションで渡すことが可能。
+`#req_extensions=v3_req` をコメントアウトしているが、phpでは`req_extensions`セクション名はphpから指定するため。openssl コマンドでも同様に、オプションで渡すことが可能。
 
 ```ini
 [ req ]
