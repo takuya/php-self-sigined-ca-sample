@@ -105,7 +105,7 @@ authorityKeyIdentifier=keyid,issuer
 subjectAltName=DNS: replace.me
 ```
 
-openssl のCAを使のであれば、SubjectAltNameは`copy_extension`でまるごとコピーが可能であるが、openssl x509 req のときは使用不可のため、明示する必要があった。
+openssl のCA機能であれば、SubjectAltNameを`copy_extension`でまるごとコピーが可能であるが、`openssl x509 req` のときはコピー不可だった。明示する必要があった。
 
 
 
