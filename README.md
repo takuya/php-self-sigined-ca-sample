@@ -63,7 +63,7 @@ openssl CAでよくある例の、`openssl ca .. copy_extensions=copy`のよう�
 
 このあたりは、不自由であるが、CA機能未使用であれば、仕方ないものとして[受け入れるしかない](https://github.com/openssl/openssl/issues/10458)。
 
-リクエスト作成時にSAN指定は例がよく見つかるが、X509_signでのSANの例は簡単に見つからないので注意したい。
+リクエスト作成時のSAN指定サンプルは見つかるが、一方でX509_signのSAN指定サンプルは簡単に見つからないので注意したい。
 
 ### php でのopenssl.cnf
 
