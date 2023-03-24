@@ -24,6 +24,15 @@ $csr = openssl_csr_new( $dn, $key, $conf );
 $cert = openssl_csr_sign( $csr, null, $key, 365, $conf );
 ```
 
+### 署名リクエストへ署名
+```php
+$opt = [
+  'config'          => $path,
+  'x509_extensions' => 'usr_cert',
+];
+$cert = openssl_csr_sign( $user_csr, $issuer_crt, $issuer_pkey, $days, $opt, time() );
+```
+
 ### 設定の作成
 ```php
 $conf = [
