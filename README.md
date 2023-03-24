@@ -10,7 +10,7 @@ php で certificate 作成する例。
 - 被発行人の証明書の作成（自己署名・署名リクエスト）
 - 発行人が署名リクエストに署名する。
 
-詳しくは、[サンプルコード](./tree/master/sample)を参照
+詳しくは、[サンプルコード](https://github.com/takuya/php-self-sigined-ca-sample/tree/master/sample)を参照
 
 ### phpでの秘密鍵の作成
 ```php
