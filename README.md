@@ -61,7 +61,7 @@ openssl_csr_sign は　openssl の [X509_sign](https://www.openssl.org/docs/man1
 上記の注意点に留意すると、subjectAltNameは署名時・リクエスト作成時、それぞれ設定が必要がある。
 openssl CAでよくある例の、`openssl ca .. copy_extensions=copy`のようなコピーは不可能である。
 
-このあたりは、不自由であるが、CA機能未使用であれば、仕方ないものとして[受け入れるしかない](https://github.com/openssl/openssl/issues/10458)。
+このあたりは不自由であるが、CA機能未使用のため仕方ないものとして[受け入れるしかない](https://github.com/openssl/openssl/issues/10458)。
 
 リクエスト作成時のSAN指定サンプルは見つかるが、一方でX509_signのSAN指定サンプルは簡単に見つからないので注意したい。
 
